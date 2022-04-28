@@ -5,8 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SpliceArrayPipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(_myArray: string, filter: string): any {
+    return _myArray.split(" ").filter((item) => item == filter);
   }
-
 }

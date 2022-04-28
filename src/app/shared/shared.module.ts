@@ -14,6 +14,10 @@ import { StarComponent } from './star/star.component';
   ],
   imports: [
     CommonModule
+  ], exports: [
+    StringConvertPipe,
+    SpliceArrayPipe,
+    StarComponent,
   ]
 })
 export class SharedModule { }
